@@ -9,7 +9,7 @@ Bienvenue sur le Comparateur de Combos Mario Kart ! Cette application web vous p
 ### 🚀 Démo en direct
 
 Vous pouvez tester l'application en direct ici : 
-**[Lien vers la démo](https://VOTRE-NOM-UTILISATEUR.github.io/NOM-DU-DEPOT/)**
+**[Lien vers la démo](https://DZTic.github.io/Builder-Mario-Kart-World/)**
 
 *(Pour déployer sur GitHub Pages : allez dans "Settings" > "Pages", choisissez la branche `main` et le dossier `/ (root)`, puis sauvegardez. Le lien sera disponible après quelques minutes.)*
 
