@@ -11,27 +11,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const drivers = [
         { name: 'Bébé Daisy', speed: -0.6, acceleration: 0.8, weight: -0.8, handling: 0.6, image: 'images/drivers/baby-daisy.png' },
         { name: 'Bébé Peach', speed: -0.6, acceleration: 0.8, weight: -0.8, handling: 0.6, image: 'images/drivers/baby-peach.png' },
-        { name: 'Para-Biddybud', speed: -0.6, acceleration: 0.8, weight: -0.8, handling: 0.6, image: 'images/drivers/para-biddybud.png' },
+        { name: 'Paracoccinelly', speed: -0.6, acceleration: 0.8, weight: -0.8, handling: 0.6, image: 'images/drivers/para-biddybud.png' },
         { name: 'Swooper', speed: -0.6, acceleration: 0.8, weight: -0.8, handling: 0.6, image: 'images/drivers/swoop.png' },
         { name: 'Bébé Luigi', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/baby-luigi.png' },
         { name: 'Bébé Mario', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/baby-mario.png' },
         { name: 'Bébé Harmonie', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/baby-rosalina.png' },
-        { name: 'Skelex', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/dry-bones.png' },
-        { name: 'Poisson-Skelet', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/fish-bone.png' },
+        { name: 'Skelerex', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/dry-bones.png' },
+        { name: 'Ossec', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/fish-bone.png' },
         { name: 'Goomba', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/goomba.png' },
-        { name: 'Peepa', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/peepa.png' },
-        { name: 'Sidestepper', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.4, image: 'images/drivers/sidestepper.png' },
+        { name: 'Paltrak', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.6, image: 'images/drivers/peepa.png' },
+        { name: 'Zarbipas', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.4, image: 'images/drivers/sidestepper.png' },
         { name: 'Spike', speed: -0.6, acceleration: 0.6, weight: -0.6, handling: 0.4, image: 'images/drivers/spike.png' },
         { name: 'Cheep Cheep', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.4, image: 'images/drivers/cheep-cheep.png' },
         { name: 'Koopa Troopa', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.4, image: 'images/drivers/koopa-troopa.png' },
         { name: 'Lakitu', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.4, image: 'images/drivers/lakitu.png' },
         { name: 'Carottin', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.4, image: 'images/drivers/nabbit.png' },
         { name: 'Maskass', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.4, image: 'images/drivers/shy-guy.png' },
-        { name: 'Piquinsecte', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.4, image: 'images/drivers/stingby.png' },
+        { name: 'Butitine', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.4, image: 'images/drivers/stingby.png' },
         { name: 'Toad', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.2, image: 'images/drivers/toad.png' },
         { name: 'Toadette', speed: -0.4, acceleration: 0.4, weight: -0.4, handling: 0.2, image: 'images/drivers/toadette.png' },
         { name: 'Bowser Jr.', speed: -0.2, acceleration: 0.2, weight: -0.2, handling: 0.2, image: 'images/drivers/bowser-jr.png' },
-        { name: 'Sacripon', speed: -0.2, acceleration: 0.2, weight: -0.2, handling: 0.2, image: 'images/drivers/coin-coffer.png' },
+        { name: 'Crapognon', speed: -0.2, acceleration: 0.2, weight: -0.2, handling: 0.2, image: 'images/drivers/coin-coffer.png' },
         { name: 'Daisy', speed: -0.2, acceleration: 0.2, weight: -0.2, handling: 0.2, image: 'images/drivers/daisy.png' },
         { name: 'Dauphin', speed: -0.2, acceleration: 0.2, weight: -0.2, handling: 0.2, image: 'images/drivers/dolphin.png' },
         { name: 'Topi Taupe', speed: -0.2, acceleration: 0.2, weight: -0.2, handling: 0.2, image: 'images/drivers/monty-mole.png' },
@@ -44,14 +44,14 @@ document.addEventListener('DOMContentLoaded', () => {
         { name: 'Pauline', speed: 0.0, acceleration: 0.0, weight: 0.0, handling: 0.0, image: 'images/drivers/pauline.png' },
         { name: 'Pingouin', speed: 0.0, acceleration: 0.0, weight: 0.0, handling: -0.2, image: 'images/drivers/penguin.png' },
         { name: 'Pokey', speed: 0.0, acceleration: 0.0, weight: 0.0, handling: -0.2, image: 'images/drivers/pokey.png' },
-        { name: 'Lèvnemop', speed: 0.0, acceleration: 0.0, weight: 0.0, handling: -0.2, image: 'images/drivers/rocky-wrench.png' },
-        { name: 'Cataquack', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.2, image: 'images/drivers/cataquack.png' },
-        { name: 'Conkdor', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.2, image: 'images/drivers/conkdor.png' },
+        { name: 'Torti Taupe', speed: 0.0, acceleration: 0.0, weight: 0.0, handling: -0.2, image: 'images/drivers/rocky-wrench.png' },
+        { name: 'Catacouac', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.2, image: 'images/drivers/cataquack.png' },
+        { name: 'Pico Condor', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.2, image: 'images/drivers/conkdor.png' },
         { name: 'Roi Boo', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.4, image: 'images/drivers/king-boo.png' },
         { name: 'Plante Piranha', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.4, image: 'images/drivers/piranha-plant.png' },
         { name: 'Harmonie', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.4, image: 'images/drivers/rosalina.png' },
         { name: 'Bonhomme de neige', speed: 0.2, acceleration: -0.2, weight: 0.2, handling: -0.4, image: 'images/drivers/snowman.png' },
-        { name: 'Chargin\' Chuck', speed: 0.4, acceleration: -0.4, weight: 0.4, handling: -0.4, image: 'images/drivers/chargin-chuck.png' },
+        { name: 'Bill Dozer', speed: 0.4, acceleration: -0.4, weight: 0.4, handling: -0.4, image: 'images/drivers/chargin-chuck.png' },
         { name: 'Vache', speed: 0.4, acceleration: -0.4, weight: 0.4, handling: -0.4, image: 'images/drivers/cow.png' },
         { name: 'Donkey Kong', speed: 0.4, acceleration: -0.4, weight: 0.4, handling: -0.4, image: 'images/drivers/donkey-kong.png' },
         { name: 'Pianta', speed: 0.4, acceleration: -0.4, weight: 0.4, handling: -0.6, image: 'images/drivers/pianta.png' },
@@ -128,9 +128,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // On utilise les noms français pour la sélection par défaut
     populateSelect(driverSelects[0], drivers, 'Mario');
-    populateSelect(driverSelects[1], drivers, 'Wario');
+    populateSelect(driverSelects[1], drivers, 'Luigi');
     populateSelect(vehicleSelects[0], vehicles, 'Standard Kart');
-    populateSelect(vehicleSelects[1], vehicles, 'Baby Blooper');
+    populateSelect(vehicleSelects[1], vehicles, 'Standard Kart');
 
     function updateCombo(comboIndex) {
         const driverName = driverSelects[comboIndex - 1].value;
