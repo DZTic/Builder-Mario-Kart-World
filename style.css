@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b0f33;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #1c214d;
+    border-radius: 15px;
+    padding: 20px 40px;
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.4);
+    border: 2px solid #4CAF50;
+}
+
+h1, h2 {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    color: #f7d800;
+    text-shadow: 2px 2px #000;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1em;
+}
+
+.comparators {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.combo-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    min-width: 400px;
+    box-sizing: border-box;
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.selector {
+    margin-bottom: 15px;
+}
+
+.selector label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* On ne style plus le select standard car il est remplacé */
+/*
+.selector select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+    background-color: #f0f0f0;
+}
+*/
+
+.results h3 {
+    text-align: center;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.stat-line {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.stat-label {
+    width: 120px;
+    font-weight: bold;
+}
+
+.stat-bar-container {
+    flex-grow: 1;
+    height: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #555;
+}
+
+.stat-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 10px;
+    transition: width 0.5s ease-out;
+}
+
+.stat-value {
+    width: 30px;
+    text-align: right;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Color codes for stats */
+.stat-bar.speed { background: linear-gradient(90deg, #ff416c, #ff4b2b); }
+.stat-bar.acceleration { background: linear-gradient(90deg, #11998e, #38ef7d); }
+.stat-bar.handling { background: linear-gradient(90deg, #3a7bd5, #00d2ff); }
+.stat-bar.weight { background: linear-gradient(90deg, #f7971e, #ffd200); }
+
+
+/* Style pour les images principales */
+.combo-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.combo-images img {
+    height: 80px;
+    width: auto;
+    max-width: 45%;
+    object-fit: contain;
+}
+
+/* ---- Style pour les listes déroulantes personnalisées (Choices.js) - CORRIGÉ ---- */
+
+/* Conteneur principal */
+.choices {
+    margin-bottom: 0;
+}
+
+/* Apparence de la boîte de sélection */
+.choices__inner {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 3px 7px 3px 4px;
+    font-size: 1em;
+    min-height: auto;
+    color: #333; /* CORRECTION : Assure que le texte sélectionné est visible */
+}
+.is-focused .choices__inner {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Style de l'élément sélectionné et des options */
+.choices__item--selectable {
+    display: flex !important; /* CORRECTION : Force l'alignement flex */
+    align-items: center;
+}
+
+/* Style de la liste déroulante qui s'ouvre */
+.choices__list--dropdown {
+    background: #f0f0f0;
+    border-color: #ccc;
+    color: #333; /* CORRECTION : Assure que le texte des options est visible */
+}
+
+/* Style des options dans la liste */
+.choices__list--dropdown .choices__item--selectable {
+    padding-right: 10px;
+}
+
+/* Flèche déroulante */
+.choices__list--dropdown .choices__item, .choices__list[aria-expanded] .choices__item {
+    font-size: 1em;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.choices[data-type*="select-one"]::after {
+    border-color: #333 transparent transparent;
+    margin-top: -7px;
+}
+.choices[data-type*="select-one"].is-open::after {
+    border-color: transparent transparent #333;
+    margin-top: -2px;
+}
+
+/* ---- Style pour nos images dans les listes ---- */
+
+/* Image à côté du nom (dans la liste et dans la boîte) */
+.choices-option-img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    border-radius: 4px;
+    background-color: rgba(0,0,0,0.1);
+    object-fit: contain;
+    flex-shrink: 0; /* Empêche l'image de rétrécir */
+}

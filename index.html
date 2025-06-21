@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparateur de Combos Mario Kart</title>
+
+    <!-- Lien vers la feuille de style de Choices.js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Comparateur de Combos</h1>
+        <p>Sélectionnez un personnage et un véhicule pour voir et comparer les stats.</p>
+
+        <div class="comparators">
+            <!-- Combo 1 -->
+            <div class="combo-card" id="combo1">
+                <h2>Combo 1</h2>
+                <!-- Conteneur pour les images -->
+                <div class="combo-images">
+                    <img id="driver1-img" src="images/placeholder.png" alt="Personnage 1">
+                    <img id="vehicle1-img" src="images/placeholder.png" alt="Véhicule 1">
+                </div>
+                <div class="selector">
+                    <label for="driver1">Personnage :</label>
+                    <select id="driver1"></select>
+                </div>
+                <div class="selector">
+                    <label for="vehicle1">Véhicule :</label>
+                    <select id="vehicle1"></select>
+                </div>
+                <div class="results">
+                    <h3>Statistiques Finales</h3>
+                    <div class="stat-line">
+                        <span class="stat-label">Vitesse</span>
+                        <div class="stat-bar-container"><div class="stat-bar speed" id="speed1-bar"></div></div>
+                        <span class="stat-value" id="speed1-value">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span class="stat-label">Accélération</span>
+                        <div class="stat-bar-container"><div class="stat-bar acceleration" id="accel1-bar"></div></div>
+                        <span class="stat-value" id="accel1-value">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span class="stat-label">Poids</span>
+                        <div class="stat-bar-container"><div class="stat-bar weight" id="weight1-bar"></div></div>
+                        <span class="stat-value" id="weight1-value">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span class="stat-label">Maniabilité</span>
+                        <div class="stat-bar-container"><div class="stat-bar handling" id="handling1-bar"></div></div>
+                        <span class="stat-value" id="handling1-value">0</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Combo 2 -->
+            <div class="combo-card" id="combo2">
+                <h2>Combo 2</h2>
+                <!-- Conteneur pour les images -->
+                <div class="combo-images">
+                    <img id="driver2-img" src="images/placeholder.png" alt="Personnage 2">
+                    <img id="vehicle2-img" src="images/placeholder.png" alt="Véhicule 2">
+                </div>
+                <div class="selector">
+                    <label for="driver2">Personnage :</label>
+                    <select id="driver2"></select>
+                </div>
+                <div class="selector">
+                    <label for="vehicle2">Véhicule :</label>
+                    <select id="vehicle2"></select>
+                </div>
+                <div class="results">
+                    <h3>Statistiques Finales</h3>
+                    <div class="stat-line">
+                        <span class="stat-label">Vitesse</span>
+                        <div class="stat-bar-container"><div class="stat-bar speed" id="speed2-bar"></div></div>
+                        <span class="stat-value" id="speed2-value">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span class="stat-label">Accélération</span>
+                        <div class="stat-bar-container"><div class="stat-bar acceleration" id="accel2-bar"></div></div>
+                        <span class="stat-value" id="accel2-value">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span class="stat-label">Poids</span>
+                        <div class="stat-bar-container"><div class="stat-bar weight" id="weight2-bar"></div></div>
+                        <span class="stat-value" id="weight2-value">0</span>
+                    </div>
+                    <div class="stat-line">
+                        <span class="stat-label">Maniabilité</span>
+                        <div class="stat-bar-container"><div class="stat-bar handling" id="handling2-bar"></div></div>
+                        <span class="stat-value" id="handling2-value">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lien vers le script de Choices.js -->
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    
+    <!-- Votre propre script, chargé après la bibliothèque -->
+    <script src="script.js"></script>
+</body>
+</html>
