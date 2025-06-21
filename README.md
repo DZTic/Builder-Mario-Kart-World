@@ -1,6 +1,6 @@
 # Comparateur de Combos Mario Kart
 
-![Screenshot du comparateur](screenshot.png)
+![Screenshot du comparateur](builder.png)
 *(Pensez à remplacer `screenshot.png` par une capture d'écran réelle de votre application !)*
 
 Bienvenue sur le Comparateur de Combos Mario Kart ! Cette application web vous permet de sélectionner et de comparer côte à côte deux combinaisons de personnage et de véhicule pour analyser leurs statistiques finales. C'est l'outil parfait pour trouver le combo idéal pour votre style de jeu.
